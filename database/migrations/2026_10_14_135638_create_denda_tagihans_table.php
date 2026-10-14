@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('kebijakan_denda_id')->constrained('kebijakan_dendas')->onDelete('cascade');
             $table->decimal('nominal', 12, 2);
             $table->text('alasan');
-            $table->foreignId('disetujui_oleh')->constrained('users')->onDelete('cacade');
+            $table->foreignId('disetujui_oleh')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
